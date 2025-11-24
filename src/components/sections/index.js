@@ -1,0 +1,10 @@
+export { ServicesSection } from "./ServicesSection";
+export { ProjectsSection } from "./ProjectsSection";
+export { ContactForm } from "./ContactForm";
+export { Hero } from "./Hero";
+export { CTA } from "./CTA";
+export { ClientsSection} from "./ClientsSection";
+export { AboutSection} from "./AboutSection";
+export { WhyChooseUsSection} from "./why_choose";
+export { ExcellenceGallery } from "./gallery";
+export { Excellencegallery } from "./galery";
