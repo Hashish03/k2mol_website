@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import {  Footer, SponsorBand, ImageSlider } from "./components/layout";
 import { Home, ProjectPage, AboutPage, ContactPage, ExperiencePage, ClientPage, ServicePage} from "./components/pages";
 
