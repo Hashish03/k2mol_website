@@ -15,7 +15,8 @@ export function ImageSlider  ({  interval = 5000 }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const getCurrentPageName = () => {
-  const path = window.location.pathname;
+  const path = window.location.hash.replace("#","");
+  
   switch(path) {
     case '/':
       return 'Home';
@@ -81,12 +82,13 @@ export function ImageSlider  ({  interval = 5000 }) {
           </div>
         
          <nav className="header-nav">
-          <a href="/">Home</a>
-          <a href="/about">About Us</a>
-          <a href="/services">Services</a>
-          <a href="/experience">Experience</a>
-          <a href="/contact">Contact</a>
-         </nav>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/about">About Us</NavLink>
+            <NavLink to="/services">Services</NavLink>
+            <NavLink to="/experience">Experience</NavLink>
+            <NavLink to="/contact">Contact</NavLink>
+          </nav>
+
         
          <div className="header-actions">
           <a href="tel:+27112368630" className="header-phone">
